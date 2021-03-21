@@ -10,3 +10,5 @@ main:
      url: /sitemap/
    - title: "Pets"
      url: /pets/
+   - title: "Portfolio"
+     url: /portfolio/
