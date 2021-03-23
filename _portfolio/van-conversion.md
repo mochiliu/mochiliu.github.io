@@ -136,15 +136,15 @@ gallery6:
 
 One of my projects during pandemic was building out a camper van. This was a collaborative project with freshly minted van dad Michael. It also features artwork by Gerry. [`Glamper Van`](https://www.glampervan.us/) and [`FarOutRide`](https://faroutride.com/)provided design inspirations.
 
-The van lived its past life as a humble and beaten up plumbing services vehicle. When we started, it had a leaky roof, metal shelvings attached, and an extremely dilapidated interior. 
-
 {% include gallery id="gallery1" class="full" caption="How this beauty came into our lives." %}
+
+The van lived its past life as a humble and beaten up plumbing services vehicle. When we started, it had a leaky roof, metal shelvings attached, and an extremely dilapidated interior. 
 
 {% include gallery id="gallery2" class="full" caption="Putting in the subfloor." %}
 
-{% include gallery id="gallery3" class="half" caption="Building out the cabinetry and electricals." %}
-
 I enjoy construction projects large and small. One of my absolute favorite mediums to work with is wood. I love designing and building out furiture. While Michael laid out the electronics, I did most of the carpentry.
+
+{% include gallery id="gallery3" class="half" caption="Building out the cabinetry and electricals." %}
 
 {% include gallery id="gallery4" class="half" caption="After a month of on and off work, we did it!" %}
 
