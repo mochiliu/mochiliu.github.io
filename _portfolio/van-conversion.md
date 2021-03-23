@@ -2,8 +2,8 @@
 title: "Van Conversion"
 excerpt: "One of my projects during pandemic was building out a camper van."
 header:
-  image: /assets/images/van/van_front/van_banner.jpg
-  teaser: assets/images/van/van_front/van_banner.jpg
+  image: /assets/images/van/van_banner.jpg
+  teaser: assets/images/van/van_banner.jpg
 gallery1:
   - url: /assets/images/van/van_front.jpg
     image_path: /assets/images/van/van_front.jpg
@@ -134,7 +134,7 @@ gallery6:
 
 
 
-One of my projects during pandemic was building out a camper van. This was a collaborative project with freshly minted van dad Michael. It also features artwork by Gerry. [`Glamper Van`](https://www.glampervan.us/) and [`FarOutRide`](https://faroutride.com/)FAROUTRIDE provided design inspirations.
+One of my projects during pandemic was building out a camper van. This was a collaborative project with freshly minted van dad Michael. It also features artwork by Gerry. [`Glamper Van`](https://www.glampervan.us/) and [`FarOutRide`](https://faroutride.com/)provided design inspirations.
 
 The van lived its past life as a humble and beaten up plumbing services vehicle. When we started, it had a leaky roof, metal shelvings attached, and an extremely dilapidated interior. 
 
