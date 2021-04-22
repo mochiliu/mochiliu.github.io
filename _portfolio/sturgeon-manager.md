@@ -14,4 +14,6 @@ When I worked as an intern at sturgeon farm, I noticed that the business keeps t
 
 The front end application was written in VB.NET. The relational database was constructed and queried using Microsoft Access. The automated reporting was made using Crystal Reports. None of this would have been possible without Pro Sherman, who I worked with closely to implement this overhaul. He also meticulously wrote the documentation shown below.
 
-<embed src="https://mochiliu.github.io/assets/images/SturgeonManagerManual.pdf" type="application/pdf" />
+<embed src="https://mochiliu.github.io/assets/images/sturgeon/SturgeonManagerManual.pdf" type="application/pdf" />
+
+Mote Caviar photo courtesy of [`Mote Marine Lab`](https://mote.org/news/article/mote-marine-laboratory-and-southeast-venture-holdings-announce-spin-off).
