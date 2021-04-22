@@ -133,7 +133,6 @@ gallery6:
 ---
 
 
-
 One of my projects during pandemic was building out a camper van. This was a collaborative project with freshly minted van dad Michael. It also features artwork by Gerry. [`Glamper Van`](https://www.glampervan.us/) and [`FarOutRide`](https://faroutride.com/)provided design inspirations.
 
 {% include gallery id="gallery1" class="full" caption="How this beauty came into our lives." %}
