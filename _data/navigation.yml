@@ -4,3 +4,8 @@ main:
      url: /about/
    - title: "Portfolio"
      url: /portfolio/
+     children:
+      - title: "Sturgeon Manager"
+        url: /portfolio/sturgeon-manager
+      - title: "Van Conversion"
+        url: /portfolio/van-conversion

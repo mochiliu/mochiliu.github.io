@@ -5,16 +5,6 @@ header:
   image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/unsplash-gallery-image-1-th.jpg
 
-gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
 ---
 Keywords: Deep Learning, Auto Encoder, Tensorflow, Python, Game of Life, Cloud Compute, Music Synthesis, IoT, MQTT, Home Assistant
 
@@ -35,7 +25,15 @@ PICTURE OF LIGHTBOARD
 
 The first software project is a [python implementation](https://github.com/benosteen/conways-game-of-life) of a modified version of [`Conway's game of life`](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) known as [High life](https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)), designed specifically for the LED board. It has 30x30 cells that have continuous boundary conditions, meaning the cells wrap around the four sides like an unfurled sphere (i.e the four corners of the board are actually the same point). The original game of life features binary "alive" or "dead" cell, but to make it more interesting I added some color to the game as well. The initial cells in the very first iteration are given a randomly chosen color when it is "spawned", and the subsequent iteration of cells that come alive have their color attributes inherited from the "parent" cells along with a slight random genetic mutation. I picked the game of life as a foundation of my exploration because it  can consistently produce qualitatively "interesting" visual patterns from a random seed. 
 
-INSERT EXAMPLE GIF OF BOARD EVOLVING  
+{% capture fig_img1 %}
+![Foo]({{ '/assets/images/projectsyn/gameoflife.gif' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img1 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>A demo of the game of life with periodic boundary conditions and a genetic coloring scheme.</figcaption>
+</figure>
+
 
 It is the ultimate example of emergence - simple predetermined rules in the micro-scale produces complex phenomena in the macro-scale. Starting from a random seeded board, and evolving the game state forward, we can observe a multitude of patterns in space and time that appear simultaneously random yet coherent. Although no two randomly instantiated game of life board can provide extremely divergent outcomes, familiar patterns arise if you are a careful observer.
 
