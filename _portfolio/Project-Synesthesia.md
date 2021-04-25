@@ -19,18 +19,25 @@ Before we dive deeper, a warning to the outside observer: the path here taken is
 
 The hardware of this project features a custom-made light board with 900 [individually addressable LEDs](https://github.com/richardghirst/rpi_ws281x) arranged 30x30, a Raspberry Pi 3B+, a sound system, and a 300W 5V DC power supply. When complex machine learning models are needed, the control data is streamed over wifi in real-time via the MQTT protocol from a laptop or desktop with a little more computational oomph than a raspberry pi.
 
-PICTURE OF LIGHTBOARD
+{% capture fig_img1 %}
+![Foo]({{ '/assets/images/projectsyn/lightboard.gif' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img1 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>The light board is composed of 900 individually addressible LEDs that can be updated at 11Hz.</figcaption>
+</figure>
 
 ### Game of Life
 
 The first software project is a [python implementation](https://github.com/benosteen/conways-game-of-life) of a modified version of [`Conway's game of life`](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) known as [High life](https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)), designed specifically for the LED board. It has 30x30 cells that have continuous boundary conditions, meaning the cells wrap around the four sides like an unfurled sphere (i.e the four corners of the board are actually the same point). The original game of life features binary "alive" or "dead" cell, but to make it more interesting I added some color to the game as well. The initial cells in the very first iteration are given a randomly chosen color when it is "spawned", and the subsequent iteration of cells that come alive have their color attributes inherited from the "parent" cells along with a slight random genetic mutation. I picked the game of life as a foundation of my exploration because it  can consistently produce qualitatively "interesting" visual patterns from a random seed. 
 
-{% capture fig_img1 %}
+{% capture fig_img2 %}
 ![Foo]({{ '/assets/images/projectsyn/gameoflife.gif' | relative_url }})
 {% endcapture %}
 
 <figure>
-  {{ fig_img1 | markdownify | remove: "<p>" | remove: "</p>" }}
+  {{ fig_img2 | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>A demo of the game of life with periodic boundary conditions and a genetic coloring scheme.</figcaption>
 </figure>
 

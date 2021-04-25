@@ -11,7 +11,7 @@ Some things I worked on prior to grad school:
 - virology internships at Merck and the Scripps Research Institute
 - undergraduate researcher at UC Berkeley studying Sudden Oak Death
 
-<embed src="https://mochiliu.github.io/assets/CV.pdf" type="application/pdf" />
+<embed src="https://mochiliu.github.io/assets/CV.pdf" type="application/pdf" width="500" height="800"/>
 
 ---
 This website is designed with [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/).

@@ -4,8 +4,17 @@ main:
      url: /about/
    - title: "Portfolio"
      url: /portfolio/
-     children:
+
+
+
+# sidebar navigation list sample
+sidebar-sample:
+  - title: "Past Projects"
+    children:
       - title: "Sturgeon Manager"
         url: /portfolio/sturgeon-manager
+
+  - title: "Hobby Projects"
+    children:
       - title: "Van Conversion"
         url: /portfolio/van-conversion
