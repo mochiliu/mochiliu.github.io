@@ -24,7 +24,8 @@ The hardware of this project features a custom-made light board with 900 [indivi
 {% endcapture %}
 
 <figure>
-  {{ fig_img1 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <img src="/assets/images/projectsyn/lightboard.gif" alt="Trulli" style="width:100%">
+
   <figcaption>The light board is composed of 900 individually addressible LEDs that can be updated at 11Hz.</figcaption>
 </figure>
 
