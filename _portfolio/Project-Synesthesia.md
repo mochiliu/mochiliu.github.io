@@ -21,7 +21,7 @@ The hardware of this project features a custom-made light board with 900 [indivi
 
 
 <figure>
-  <img src="/assets/images/projectsyn/lightboard.gif" style="width:50%">
+  <center><img src="/assets/images/projectsyn/lightboard.gif" style="width:50%"></center>
   <figcaption>The light board is composed of 900 individually addressible LEDs that can be updated at 11Hz.</figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ The first software project is a [python implementation](https://github.com/benos
 
 
 <figure>
-  <img src="/assets/images/projectsyn/gameoflife.gif" style="width:50%">
+  <center><img src="/assets/images/projectsyn/gameoflife.gif" style="width:50%"></center>
   <figcaption>A demo of the game of life with periodic boundary conditions and a genetic coloring scheme.</figcaption>
 </figure>
 
