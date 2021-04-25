@@ -11,7 +11,11 @@ Some things I worked on prior to grad school:
 - virology internships at Merck and the Scripps Research Institute
 - undergraduate researcher at UC Berkeley studying Sudden Oak Death
 
-<embed src="https://mochiliu.github.io/assets/CV.pdf" type="application/pdf" width="500" height="800"/>
+<object data="https://mochiliu.github.io/assets/CV.pdf" type="application/pdf" width="100%" height="800px"> 
+  <p>It appears you don't have a PDF plugin for this browser.
+   No biggie... you can <a href="resume.pdf">click here to
+  download the PDF file.</a></p>  
+</object>
 
 ---
 This website is designed with [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/).
