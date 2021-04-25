@@ -31,7 +31,7 @@ The first software project is a [python implementation](https://github.com/benos
 
 
 <figure>
-  <center><img src="/assets/images/projectsyn/gameoflife.gif" style="width:50%"></center>
+  <center><img src="/assets/images/projectsyn/gameoflife.gif" style="width:75%"></center>
   <figcaption>A demo of the game of life with periodic boundary conditions and a genetic coloring scheme.</figcaption>
 </figure>
 
