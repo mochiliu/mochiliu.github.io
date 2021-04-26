@@ -17,17 +17,18 @@ Before we dive deeper, a warning to the outside observer: the path here taken is
 
 ### Light Board Hardware
 
-The hardware of this project features a custom-made light board with 900 [individually addressable LEDs](https://github.com/richardghirst/rpi_ws281x) arranged 30x30, a Raspberry Pi 3B+, a sound system, and a 300W 5V DC power supply. When complex machine learning models are needed, the control data is streamed over wifi in real-time from a laptop or desktop with a little more computational oomph than a raspberry pi.
+The hardware of this project features a custom-made light board with 900 [individually addressable LEDs](https://github.com/richardghirst/rpi_ws281x) arranged 30x30, a Raspberry Pi 3B+, a sound system, and a 300W 5V DC power supply. The board measures roughly a meter by a meter. When complex machine learning models are needed, the control data is streamed over wifi in real-time from a laptop or desktop with a little more computational oomph than a raspberry pi.
 
 <figure>
   <center><img src="/assets/images/projectsyn/lightboard.gif" style="width:50%"></center>
   <figcaption>The light board is composed of 900 individually addressible LEDs that can be updated at 11Hz.</figcaption>
 </figure>
 
+Unfortunately, some of the light board's majesty of is lost when I tried to record it with my cell phone, so I apologize in advance for the poor video quality.
+
 ### Game of Life
 
 The first software project is a [python implementation](https://github.com/benosteen/conways-game-of-life) of a modified version of [`Conway's game of life`](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) known as [High life](https://en.wikipedia.org/wiki/Highlife_(cellular_automaton)), designed specifically for the LED board. It has 30x30 cells that have continuous boundary conditions, meaning the cells wrap around the four sides like an unfurled sphere (i.e the four corners of the board are actually the same point). The original game of life features binary "alive" or "dead" cell, but to make it more interesting I added some color to the game as well. The initial cells in the very first iteration are given a randomly chosen color when it is "spawned", and the subsequent iteration of cells that come alive have their color attributes inherited from the "parent" cells along with a slight random genetic mutation. I picked the game of life as a foundation of my exploration because it  can consistently produce qualitatively "interesting" visual patterns from a random seed. 
-
 
 <figure>
   <center><img src="/assets/images/projectsyn/gameoflife.gif" style="width:75%"></center>
@@ -44,7 +45,9 @@ But how can a game of life to produce music? The following sections produce some
 
 The simplest solution that I came up with is to use the alive cells as notes, as if a mechanical piano was played with perforated paper. The board is read from one side to the other in columns. With some fixed interval, the notes are played out loud using [fluidsynth](https://www.fluidsynth.org/). To ensure the notes do not sound too discordant, we will enforce a major pentatonic scale. My personal favorite instruments are the vibraphone and seashore.
 
-Vibraphone and Seashore clips
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/phh2-MIAC-8?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/zCnr3WHkU2k?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ### Deep Learning
 
@@ -67,7 +70,7 @@ Using these two autoencoders, I can then translate game of life boards into musi
 
 Although with much effort, I was able to get Tensorflow to run on a Raspberry Pi 3, it doe not offer nearly enough memory or computational speed to perform inference with these autoencoder models in real-time. As a result, I built a way to stream the game of life and music generation from my laptop to the Raspberry Pi using UDP streaming. Here is a video of the game of life playing the Project Magenta's trained drumsets.
 
-VIDEO 
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/O9LfhIcFQqI?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Although interesting, the results only begs for further development. I am always looking for ideas on this front :)
 
