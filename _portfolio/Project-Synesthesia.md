@@ -53,9 +53,7 @@ This rule based translation of a visual board into muscial notes is simple, but 
 This desire to find represenations that reduce the dimensionality led me to a class of neural networks known as [autoencoders](https://en.wikipedia.org/wiki/Autoencoder). Through the magic of deep learning, we can perform this dimensionality reduction by training of thousands of game of life configurations that are naturally evolved from random seeds. The autoencoder simultaneously trains both an encoder and a decoder. The encoder takes the 900 dimensional game of life image and outputs a much lower dimensional latent vector. The decoder takes the low dimensional latent vector and tries to recreate the original game of life board. The training process seeks to minimize the difference between the original board and the regenerated board that has low dimensional information bottleneck. I found for this instance, the smallest latent vector that is a power of 2 is 32 dimensions. 
 
 <figure>
-  <center>
-    <img src="/assets/images/projectsyn/gameoflife_autoencoder_train_pred.gif" style="width:400%">
-  </center>
+  <center><img src="/assets/images/projectsyn/gameoflife_autoencoder_train_pred.gif" style="width:100%"></center>
   <figcaption>Original (left) and autoencoded (right) game of life boards after 450 epochs of training.</figcaption>
 </figure>
 
@@ -68,6 +66,8 @@ Using these two autoencoders, I can then translate game of life boards into musi
 SAMPLE RESULTS
 
 Although with much effort, I was able to get Tensorflow to run on a Raspberry Pi 3, it doe not offer nearly enough memory or computational speed to perform inference with these autoencoder models in real-time. As a result, I built a way to stream the game of life and music generation from my laptop to the Raspberry Pi using JSON through the [MQTT](https://en.wikipedia.org/wiki/MQTT)protocol.
+
+VIDEO 
 
 Although interesting, the results only begs for further development. I am always looking for ideas on this front :)
 
