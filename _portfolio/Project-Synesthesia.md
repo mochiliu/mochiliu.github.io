@@ -52,7 +52,13 @@ This rule based translation of a visual board into muscial notes is simple, but 
 
 This desire to find represenations that reduce the dimensionality led me to a class of neural networks known as [autoencoders](https://en.wikipedia.org/wiki/Autoencoder). Through the magic of deep learning, we can perform this dimensionality reduction by training of thousands of game of life configurations that are naturally evolved from random seeds. The autoencoder simultaneously trains both an encoder and a decoder. The encoder takes the 900 dimensional game of life image and outputs a much lower dimensional latent vector. The decoder takes the low dimensional latent vector and tries to recreate the original game of life board. The training process seeks to minimize the difference between the original board and the regenerated board that has low dimensional information bottleneck. I found for this instance, the smallest latent vector that is a power of 2 is 32 dimensions. 
 
-PICS OF BOARD AND REGENERATED
+<figure>
+  <center>
+    <img src="/assets/images/projectsyn/gameoflife_autoencoder_train.gif" style="width:200%">
+    <img src="/assets/images/projectsyn/gameoflife_autoencoder_pred.gif" style="width:200%">
+  </center>
+  <figcaption>Original and autoencoded game of life boards after 450 epochs of training.</figcaption>
+</figure>
 
 Note the autoencoder is trained to generate binary black and white images. It does not have access to color information. The autoencoder code is forked from [BAVE-tf](https://github.com/alecGraves/BVAE-tf), with custom convolutional and dense layers designed for the game of life by me. See [BAVE-tf](https://github.com/mochiliu/BVAE-tf) for source code. I used my introductory $300 of Google Cloud Compute credits to train some of these models. After burning through my credits, I invested in a entry level Nvidia GPU for training. 
 
