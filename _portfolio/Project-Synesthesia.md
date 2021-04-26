@@ -6,7 +6,7 @@ header:
   teaser: /assets/images/projectsyn/gameoflife_100.gif
 
 ---
-Keywords: Deep Learning, Auto Encoder, Tensorflow, Python, Game of Life, Cloud Compute, Music Synthesis, IoT, MQTT, Home Assistant
+Keywords: Deep Learning, Auto Encoder, Tensorflow, Python, Game of Life, Cloud Compute, Music Synthesis
 
 
 Can a machine translate one senory phenomenon into another? Or are experiences solely the domain of biological beings?
@@ -17,7 +17,7 @@ Before we dive deeper, a warning to the outside observer: the path here taken is
 
 ### Light Board Hardware
 
-The hardware of this project features a custom-made light board with 900 [individually addressable LEDs](https://github.com/richardghirst/rpi_ws281x) arranged 30x30, a Raspberry Pi 3B+, a sound system, and a 300W 5V DC power supply. When complex machine learning models are needed, the control data is streamed over wifi in real-time via the MQTT protocol from a laptop or desktop with a little more computational oomph than a raspberry pi.
+The hardware of this project features a custom-made light board with 900 [individually addressable LEDs](https://github.com/richardghirst/rpi_ws281x) arranged 30x30, a Raspberry Pi 3B+, a sound system, and a 300W 5V DC power supply. When complex machine learning models are needed, the control data is streamed over wifi in real-time from a laptop or desktop with a little more computational oomph than a raspberry pi.
 
 <figure>
   <center><img src="/assets/images/projectsyn/lightboard.gif" style="width:50%"></center>
@@ -61,11 +61,11 @@ Note the autoencoder is trained to generate binary black and white images. It do
 
 For autoencoders that can generate music, I used a pre-trained model from Google's [Project Magenta](https://magenta.tensorflow.org/music-vae). These pre-trained models are especially helpful because they are trained on high quality data with computational resources that I can only drool at. The researchers here trained autoencoders that can represent 2 bar melodies or drumlines.
 
-Using these two autoencoders, I can then translate game of life boards into musical beats or melodies by leveraging an interesting property of autoencoders, namely, points close to each other in the lower dimensional latent space are also close to each other in the higher dimeensional space. Due to this characteristic, I can captures the relative movement in game of life space and translate that into a similar movement in the music space, giving an dynamic to the music generation that is "inspired" by the evolving game. I do this by connecting the trained encoder of the game of life board to the trained decoder for music generation at the latent space. Because the dimensionalities of the latent spaces for the music autoencoders are much larger, I pick a random 32 dimensional subspace for the much larger (size 128 or 256) space and a random starting point before starting the game. For each iteration of the game of life, I calculate how much deviation occurred in the game of life latent space, and translate an equal amount in the music latent space via the predefine subspace. Some sample results are shown below.
+Using these two autoencoders, I can then translate game of life boards into musical beats or melodies by leveraging an interesting property of autoencoders, namely, points close to each other in the lower dimensional latent space are also close to each other in the higher dimeensional space. Due to this characteristic, I can captures the relative movement in game of life space and translate that into a similar movement in the music space, giving an dynamic to the music generation that is "inspired" by the evolving game. I do this by connecting the trained encoder of the game of life board to the trained decoder for music generation at the latent space. Because the dimensionalities of the latent spaces for the music autoencoders are much larger, I pick a random 32 dimensional subspace for the much larger (size 128 or 256) space and a random starting point before starting the game. For each iteration of the game of life, I calculate how much deviation occurred in the game of life latent space, and translate an equal amount in the music latent space via the predefine subspace. Using [pygame](ww.pygame.org) and its built in midi player, I can run this on my laptop before running it through the LED board.
 
-SAMPLE RESULTS
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/aww-bIfH9UI?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Although with much effort, I was able to get Tensorflow to run on a Raspberry Pi 3, it doe not offer nearly enough memory or computational speed to perform inference with these autoencoder models in real-time. As a result, I built a way to stream the game of life and music generation from my laptop to the Raspberry Pi using JSON through the [MQTT](https://en.wikipedia.org/wiki/MQTT)protocol.
+Although with much effort, I was able to get Tensorflow to run on a Raspberry Pi 3, it doe not offer nearly enough memory or computational speed to perform inference with these autoencoder models in real-time. As a result, I built a way to stream the game of life and music generation from my laptop to the Raspberry Pi using UDP streaming. Here is a video of the game of life playing the Project Magenta's trained drumsets.
 
 VIDEO 
 
