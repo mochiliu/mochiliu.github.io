@@ -54,10 +54,9 @@ This desire to find represenations that reduce the dimensionality led me to a cl
 
 <figure>
   <center>
-    <img src="/assets/images/projectsyn/gameoflife_autoencoder_train.gif" style="width:200%">
-    <img src="/assets/images/projectsyn/gameoflife_autoencoder_pred.gif" style="width:200%">
+    <img src="/assets/images/projectsyn/gameoflife_autoencoder_train_pred.gif" style="width:400%">
   </center>
-  <figcaption>Original and autoencoded game of life boards after 450 epochs of training.</figcaption>
+  <figcaption>Original (left) and autoencoded (right) game of life boards after 450 epochs of training.</figcaption>
 </figure>
 
 Note the autoencoder is trained to generate binary black and white images. It does not have access to color information. The autoencoder code is forked from [BAVE-tf](https://github.com/alecGraves/BVAE-tf), with custom convolutional and dense layers designed for the game of life by me. See [BAVE-tf](https://github.com/mochiliu/BVAE-tf) for source code. I used my introductory $300 of Google Cloud Compute credits to train some of these models. After burning through my credits, I invested in a entry level Nvidia GPU for training. 
