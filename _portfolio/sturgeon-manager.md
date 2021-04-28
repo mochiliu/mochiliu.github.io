@@ -4,11 +4,14 @@ excerpt: "I developed Sturgeon Manager as the software platform that manages pro
 header:
   image: /assets/images/sturgeon/Mote_Caviar.jpg
   teaser: assets/images/sturgeon/Mote_Caviar.jpg
-
+tags:
+  - Aquaculture
+  - VB.NET
+  - Microsoft Access
+  - Relational Database
+  - Software Contractor
+  - Crystal Reports
 ---
-Keywords: Aquaculture, VB.NET, Microsoft Access, Relational Database, Software Contractor, Crystal Reports
-
-
 I developed [Sturgeon Manager](https://github.com/mochiliu/Sturgeon-Manager-v1.0) as the software platform that manages production, inventory, pricing, and customers for the [Mote Marine Lab's](https://mote.org/) [Sturgeon Demonstration Program](https://www.heraldtribune.com/article/LK/20120416/News/605201142/SH) as a software contractor from 2013 to 2014. The goal of the non-profit fish farm was to demonstrate that expensive caviar can be produced in a farm setting rather than from poaching endangered animals in the wild. The farm was later spun off as a [private for-profit company](https://www.forbes.com/sites/robindschatz/2015/11/30/caviar-dreams-a-florida-startup-bets-on-sustainable-sturgeon-farming-amid-palms-and-spanish-moss/?sh=5bf1494d7180).
 
 <figure>

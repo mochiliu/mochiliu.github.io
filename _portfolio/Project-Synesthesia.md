@@ -4,11 +4,16 @@ excerpt: "Can a machine translate one senory phenomenon into another?"
 header:
   image: /assets/images/projectsyn/gameoflife_100.gif
   teaser: /assets/images/projectsyn/gameoflife_100.gif
-
+tags:
+  - Hobby Project
+  - Deep Learning
+  - Auto Encoder
+  - Tensorflow
+  - Python
+  - Game of Life
+  - Cloud Compute
+  - Music Synthesis
 ---
-Keywords: Deep Learning, Auto Encoder, Tensorflow, Python, Game of Life, Cloud Compute, Music Synthesis
-
-
 Can a machine translate one senory phenomenon into another? Or are experiences solely the domain of biological beings?
 
 These questions motivated a series of inter-connected pet projects I worked on in the past few years. 

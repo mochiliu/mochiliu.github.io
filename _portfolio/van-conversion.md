@@ -130,6 +130,10 @@ gallery6:
   - url: /assets/images/van/gerry.jpg
     image_path: /assets/images/van/gerry.jpg
     alt: "van gerry"
+tags:
+  - Hobby Project
+  - Wood Working
+
 ---
 
 

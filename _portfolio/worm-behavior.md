@@ -1,6 +1,6 @@
 ---
 title: "Understanding worm behavior with machine learning"
-excerpt: "The big question I tackled for my graduate thesis is how does an animal, the round worm *C. elegans* in my case, process sensory information and make behavioral decisions."
+excerpt: "The big question I tackled for my graduate thesis is how does an animal process sensory information and make behavioral decisions."
 header:
   image: /assets/images/worm-touch/single_worm_mapped_short.gif
   teaser: /assets/images/worm-touch/single_worm_mapped_short.gif
@@ -14,8 +14,7 @@ tags:
   - t-SNE
   - optogenetics
 ---
-
-The big question I tackled for my graduate thesis is how does an animal, the round worm *C. elegans* in my case, process sensory information and make behavioral decisions. To do this, I first built an instrument that can probe many worms and record their behaviors. Then I used unsupervised machine learning to map out the behavioral repertoire of the animal using thousands of hours of recordings. Finally, I developed mathematical models that can predict the worm's decision making for a given stimulus. These detailed methods and results are published in the journal eLife: [Temporal processing and context dependency in *Caenorhabditis elegans* response to mechanosensation](https://elifesciences.org/articles/36419).
+The big question I tackled for my graduate thesis is how does an animal process sensory information and make behavioral decisions. To study this using the round worm *C. elegans*, I first built an instrument that can probe many worms and record their behaviors. Then I used unsupervised machine learning to map out the behavioral repertoire of the animal using thousands of hours of recordings. Finally, I developed mathematical models that can predict the worm's decision making for a given stimulus. These detailed methods and results are published in the journal eLife: [Temporal processing and context dependency in *Caenorhabditis elegans* response to mechanosensation](https://elifesciences.org/articles/36419).
 
 <figure>
   <center><img src="/assets/images/worm-touch/instrument.jpg" style="width:50%"></center>
