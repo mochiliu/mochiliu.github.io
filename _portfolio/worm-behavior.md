@@ -2,8 +2,8 @@
 title: "Understanding worm behavior with machine learning"
 excerpt: "The big question I tackled for my graduate thesis is how does an animal, the round worm *C. elegans* in my case, process sensory information and make behavioral decisions."
 header:
-  image: /assets/images/worm-touch/brady_movies.gif
-  teaser: /assets/images/worm-touch/brady_movies.gif
+  image: /assets/images/worm-touch/single_worm_mapped_short.gif
+  teaser: /assets/images/worm-touch/single_worm_mapped_short.gif
 tags:
   - animal behavior
   - computer vision
