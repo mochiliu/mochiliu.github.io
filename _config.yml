@@ -288,7 +288,7 @@ defaults:
       related: true
   # _portfolio
   - scope:
-      path: "portfolio"
+      path: ""
       type: portfolio
     values:
       layout: single
