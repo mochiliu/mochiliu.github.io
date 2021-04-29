@@ -275,9 +275,20 @@ collections:
 
 # Defaults
 defaults:
-   _portfolio
+  # _posts
   - scope:
       path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+  # _portfolio
+  - scope:
+      path: "_portfolio"
       type: portfolio
     values:
       layout: single
