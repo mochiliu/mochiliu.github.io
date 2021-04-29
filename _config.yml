@@ -98,7 +98,7 @@ author:
   avatar           : "/assets/images/LiuHeadSq.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a recent PhD grad who loves to learn about and tinker with both software and hardware"
   location         : "Princeton, NJ"
-  email            :
+  email            : mochi.liu@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -268,9 +268,6 @@ compress_html:
 
 # Collections
 collections:
-  pets:
-    output: true
-    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -278,18 +275,7 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-  # _portfolio
+   _portfolio
   - scope:
       path: ""
       type: portfolio
