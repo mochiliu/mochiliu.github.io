@@ -2,8 +2,8 @@
 title: "Real-time tracking and stimulus targeting"
 excerpt: ""
 header:
-  image: /assets/images/worm-touch/whole_field_of_view.gif
-  teaser: /assets/images/worm-touch/whole_field_of_view.gif
+  image: /assets/images/realtime/whole_field_of_view.gif
+  teaser: /assets/images/realtime/whole_field_of_view.gif
 tags:
   - animal behavior
   - computer vision
@@ -27,7 +27,7 @@ While my the [previous work](https://mochiliu.github.io/portfolio/worm-behavior/
 GUI of the real-time LabVIEW sotware.
 
 
-Although it is possible to run the software on older machines, the software takes advantage of the high number of cores available to a modern computer to minimize the real-time behavioral feedback lag. The computers we picked employ the latest processor with 32 cores (Threadripper 3970X, AMD). These cores ensure that the LabVIEW environment has plenty of parallelized computing power to reduce the number of frames dropped in tracking, saving, and stimulus drawing. The computer also has 6 TB total of PCIe Gen4 solid state storage (SB-ROCKET-NVMe4-2TB, Sabrent) to enable us to save raw camera and projector images in real time. This way, we can reduce latency by doing the image compression in post-processing.
+Although it is possible to run the software on older machines, the software takes advantage of the high number of cores available to a modern computer to minimize the real-time behavioral feedback lag. The computers we picked employ the latest processor with 32 cores (Threadripper 3970X, AMD). These cores ensure that the LabVIEW environment has plenty of parallelized computing power to reduce the number of frames dropped in tracking, saving, and stimulus drawing. The computer also has 6 TB total of PCIe Gen4 solid state storage to enable us to save raw camera and projector images in real time. This way, we can reduce latency by doing the image compression in post-processing.
 
 <figure>
   <center><img src="/assets/images/realtime/whole_field_of_view.gif" style="width:100%"></center>
