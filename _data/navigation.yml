@@ -4,8 +4,8 @@ main:
      url: /about/
    - title: "Portfolio"
      url: /portfolio/
-
-
+   - title: "Pet Projects"
+     url: /petprojects/
 
 # sidebar navigation list sample
 sidebar-sample:
