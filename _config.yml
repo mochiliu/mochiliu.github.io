@@ -271,6 +271,9 @@ collections:
   petprojects:
     output: true
     permalink: /:collection/:path/
+  pets:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
