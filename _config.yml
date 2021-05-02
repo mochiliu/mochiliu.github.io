@@ -271,9 +271,6 @@ collections:
   petprojects:
     output: true
     permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
 
 
 # Defaults
@@ -297,10 +294,10 @@ defaults:
       layout: single
       author_profile: false
       share: true
-  # _pets
+  # _petprojects
   - scope:
       path: ""
-      type: pets
+      type: petprojects
     values:
       layout: single
       author_profile: false
