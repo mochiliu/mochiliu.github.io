@@ -1,6 +1,6 @@
 ---
 title: "Real-time tracking and stimulus targeting"
-excerpt: ""
+excerpt: "I designed an instrument that can probe worm behavioral response to spatially coherent inhibitory and excitatory optogenetic stimuli, with real-time behavior segmentation and stimulus targeting for many animals in parallel."
 header:
   image: /assets/images/realtime/whole_field_of_view.gif
   teaser: /assets/images/realtime/whole_field_of_view.gif
