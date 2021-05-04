@@ -19,7 +19,14 @@ I developed [Sturgeon Manager](https://github.com/mochiliu/Sturgeon-Manager-v1.0
   <figcaption>Me working on the farm moving fish!</figcaption>
 </figure>
 
-When I worked as an intern at sturgeon farm, I noticed that the business keeps track of its orders and inventory on disorganized Excel files and lose pieces of paper. To help the farm gain control of its own data, I pitched a plan to build a database that allows the farm to digitalize and analyze information from production to sales. The scope of my project quickly expanded to 15 interconnected tables with tens of thousands of entries, including individual fish, packaged caviar containers, customers, pricing, and invoices. Working with my clients, I also developed the front-end application [Sturgeon Manager](https://github.com/mochiliu/Sturgeon-Manager-v1.0) for intuitive operation, built-in product barcode scanning and printing, and automated report generation. Since the system became operational, it accurately managed an inventory and invoices valuing more than a million dollars, while saving employees thousands of man-hours by streamlining workflow.
+When I worked as an intern at sturgeon farm, I noticed that the business keeps track of its orders and inventory on disorganized Excel files and lose pieces of paper. To help the farm gain control of its own data, I pitched a plan to build a database that allows the farm to digitalize and analyze information from production to sales. The scope of my project quickly expanded to 15 interconnected tables with tens of thousands of entries, including individual fish, packaged caviar containers, customers, pricing, and invoices. 
+
+<figure>
+  <center><img src="/assets/images/sturgeon/relationships.png" style="width:100%"></center>
+  <figcaption>Relational database that tracks data on the farm.</figcaption>
+</figure>
+
+Working with my clients, I also developed the front-end application [Sturgeon Manager](https://github.com/mochiliu/Sturgeon-Manager-v1.0) for intuitive operation, built-in product barcode scanning and printing, and automated report generation. Since the system became operational, it accurately managed an inventory and invoices valuing more than a million dollars, while saving employees thousands of man-hours by streamlining workflow.
 
 <figure>
   <center><img src="/assets/images/sturgeon/invoice_page.png" style="width:100%"></center>
