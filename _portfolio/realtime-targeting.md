@@ -22,11 +22,26 @@ While highly informative to our understanding of worm touch circuitry, the my [p
   <figcaption>Cartoon layout of the Real-Time Multimodal Optogenetic Assay System. A projector is used for targeted optogenetic stimulus delivery based on real-time tracking of worms on an agar plate. The green channel is reserved for spatial and temporal calibration, while the red and blue channels are used for optogenetics.</figcaption>
 </figure>
 
+<figure>
+  <center><img src="/assets/images/realtime/instrument.jpg" style="width:50%"></center>
+  <figcaption>Photo of the instrument. It features a projector on top and a camera on the bottom sandwiching a infrared LED ring that holds a plate of worms.</figcaption>
+</figure>
+
+<figure>
+  <center><img src="/assets/images/realtime/instrument_top.jpg" style="width:50%"></center>
+  <figcaption>Photo of the instrument from the top showing the DLP projector, control board, and a custom 3D printed mount.</figcaption>
+</figure>
+
 While my the [previous work](https://mochiliu.github.io/portfolio/worm-behavior/) also utilize custom LabVIEW Virtual Instruments (VIs) for stimulation and capturing video, the control software here features a great deal more sophistication. It is able to track worms, extract centerlines along with other behavioral metrics, and draw spatially and temporally customized stimuli, all in real time at up to 30 Hz (the camera frame rate).
 
 <figure>
   <center><img src="/assets/images/realtime/GUI.gif" style="width:100%"></center>
   <figcaption>GUI of the real-time LabVIEW software. While only a single worm is displayed in detail with low refresh rate, all of the worms are being tracked simulataneouly at 30 Hz.</figcaption>
+</figure>
+
+<figure>
+  <center><img src="/assets/images/realtime/live.gif" style="width:50%"></center>
+  <figcaption>Live experiment as seen from the side. Individual worms are targeted for stimulation while a temporal calibration pattern is projected in green.</figcaption>
 </figure>
 
 Although it is possible to run the software on older machines, the software takes advantage of the high number of cores available to a modern computer to minimize the real-time behavioral feedback lag. The computers we picked employ the latest processor with 32 cores (Threadripper 3970X, AMD). These cores ensure that the LabVIEW environment has plenty of parallelized computing power to reduce the number of frames dropped in tracking, saving, and stimulus drawing. The computer also has 6 TB total of PCIe Gen4 solid state storage to enable us to save raw camera and projector images in real time. This way, we can reduce latency by doing the image compression in post-processing.

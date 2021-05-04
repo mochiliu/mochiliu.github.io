@@ -14,7 +14,7 @@ tags:
   - t-SNE
   - optogenetics
 ---
-The big question I tackled for my graduate thesis is how does an animal process sensory information and make behavioral decisions. To study this using the round worm *C. elegans*, I first built an instrument that can probe many worms and record their behaviors. Then I used unsupervised machine learning to map out the behavioral repertoire of the animal using thousands of hours of recordings. Finally, I developed mathematical models that can predict the worm's decision making for a given stimulus. These detailed methods and results are published in the journal eLife: [Temporal processing and context dependency in *Caenorhabditis elegans* response to mechanosensation](https://elifesciences.org/articles/36419).
+The big question I tackled for my graduate thesis is how does an animal process sensory information and make behavioral decisions. To study this using the round worm *C. elegans*, I first built an instrument that can probe many worms and record their behaviors. Then I used unsupervised machine learning to map out the behavioral repertoire of the animal using thousands of hours of recordings. Finally, I developed mathematical models that can predict the worm's decision making for a given stimulus. These detailed methods and results are published in the journal eLife: [Temporal processing and context dependency in *Caenorhabditis elegans* response to mechanosensation](https://elifesciences.org/articles/36419). The [source code](https://github.com/mochiliu/liu-temporal-processing) is also available.
 
 <figure>
   <center><img src="/assets/images/worm-touch/instrument.jpg" style="width:50%"></center>
