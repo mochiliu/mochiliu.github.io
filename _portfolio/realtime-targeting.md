@@ -63,3 +63,9 @@ Using this instrument, we can not only study how the animal integrates head and 
   <figcaption>An individual worm video plotted during post analysis for an experiment with stimulation during turning. It shows the raw worm image, its centerline, and the overlaid stimulus image.</figcaption>
 </figure>
 
+Finally, to even further increase throughput, we scaled from a single prototype intrument to 4 identical instruments.
+
+<figure>
+  <center>4 instruments running simulataneously, allowing us to assay hundreds of animals at once.<img src="/assets/images/realtime/four_rigs.jpg" style="width:100%"></center>
+  <figcaption></figcaption>
+</figure>
