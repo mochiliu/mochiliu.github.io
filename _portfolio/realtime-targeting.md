@@ -33,6 +33,10 @@ While highly informative to our understanding of worm touch circuitry, the my [p
 </figure>
 
 While my the [previous work](https://mochiliu.github.io/portfolio/worm-behavior/) also utilize custom LabVIEW Virtual Instruments (VIs) for stimulation and capturing video, the control software here features a great deal more sophistication. It is able to track worms, extract centerlines along with other behavioral metrics, and draw spatially and temporally customized stimuli, all in real time at up to 30 Hz (the camera frame rate).
+<figure>
+  <center><img src="/assets/images/realtime/realtime_image_processing.png.gif" style="width:100%"></center>
+  <figcaption>A diagram showing the various software modules running synchronously and asynchronously. Note the image processing demo is illustrative, but the actual field of view is much bigger.</figcaption>
+</figure>
 
 <figure>
   <center><img src="/assets/images/realtime/GUI.gif" style="width:100%"></center>
